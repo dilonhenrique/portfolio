@@ -7,11 +7,13 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100%;
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
   }
   body {
     display: flex;
     flex: 1;
     flex-direction: column;
+    background-color: ${props => props.theme.colors.neutral.x000};
   }
   #__next {
     width: 100%;

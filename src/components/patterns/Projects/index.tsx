@@ -10,7 +10,7 @@ import ArrowButton from '@/components/elements/ArrowButton';
 export default function Projects() {
   return (
     <StyledProjects>
-      <div className='container'>
+      <div className='container' id='projects'>
         <Text as='h2' variant='heading2'>Projects<span className='dot'>.</span></Text>
         <ul className='projects'>
           {projects.map((proj, index) => (
@@ -24,12 +24,12 @@ export default function Projects() {
                 <div className='project__icons'>
                   {proj.categories.map(cat => {
                     const catAtual = habilities.find(hab => hab.slug === cat);
-                    return catAtual && <catAtual.Icon size={30} key={cat} title={catAtual.name} />
+                    return catAtual && <div><catAtual.Icon size={26} key={cat} title={catAtual.name} /></div>
                   })}
                 </div>
               </a>
               <div className='project__text'>
-                <Text style={{fontWeight: 700 }}>{proj.name}</Text>
+                <Text style={{fontWeight: 700, opacity: 1 }}>{proj.name}</Text>
                 <ArrowButton href={proj.link} target='_blank'>See this</ArrowButton>
               </div>
             </li>

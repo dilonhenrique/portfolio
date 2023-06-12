@@ -1,4 +1,4 @@
-export const colors = {
+const defaultColors = {
   warning: {
     x050: '#FFFBEA',
     x100: '#FFF3C4',
@@ -35,20 +35,6 @@ export const colors = {
     x800: '#07600E',
     x900: '#014807',
   },
-  neutral: {
-    x000: '#FFFFFF',
-    x050: '#F7F7F7',
-    x100: '#E1E1E1',
-    x200: '#CFCFCF',
-    x300: '#B1B1B1',
-    x400: '#9E9E9E',
-    x500: '#7E7E7E',
-    x600: '#626262',
-    x700: '#515151',
-    x800: '#3B3B3B',
-    x900: '#222222',
-    x999: '#111111',
-  },
   accent: {
     x050: '#FFE3EC',
     x100: '#FFB8D2',
@@ -74,3 +60,43 @@ export const colors = {
     x900: '#311b92',
   },  
 };
+
+const neutralLight = {
+  x000: '#FFFFFF',
+  x050: '#F7F7F7',
+  x100: '#E1E1E1',
+  x200: '#CFCFCF',
+  x300: '#B1B1B1',
+  x400: '#9E9E9E',
+  x500: '#7E7E7E',
+  x600: '#626262',
+  x700: '#515151',
+  x800: '#3B3B3B',
+  x900: '#222222',
+  x999: '#111111',
+}
+
+const neutralDark = {
+  x999: '#FFFFFF',
+  x900: '#F7F7F7',
+  x800: '#E1E1E1',
+  x700: '#CFCFCF',
+  x600: '#B1B1B1',
+  x500: '#9E9E9E',
+  x400: '#7E7E7E',
+  x300: '#626262',
+  x200: '#515151',
+  x100: '#3B3B3B',
+  x050: '#222222',
+  x000: '#111111',
+}
+
+export const lightColors = {
+  ...defaultColors,
+  neutral: {...neutralLight},
+}
+
+export const darkColors = {
+  ...defaultColors,
+  neutral: {...neutralDark},
+}

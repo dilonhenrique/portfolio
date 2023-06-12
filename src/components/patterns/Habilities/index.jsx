@@ -10,7 +10,7 @@ const iconProps = {
 export default function Habilities() {
   return (
     <StyledHabilities>
-      <div className='container'>
+      <div className='container' id='habilities'>
         <Text as='h2' variant='heading2'>Habilities<span className='dot'>.</span></Text>
         <ul className='habilities'>
           {habilities.map(hab => (

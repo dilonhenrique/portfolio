@@ -20,16 +20,15 @@ export const StyledAbout = styled.section`
 
     .about__number {
       width: 180px;
-      /* height: 200px; */
       padding: 3rem 0;
-      /* display: flex; */
-      border: 1px solid #d9d9d9;
+      border: 1px solid ${props => props.theme.colors.neutral.x100};
       border-radius: 10px;
       text-align: center;
       transition: 0.3s ease-in-out;
 
       svg {
         margin-bottom: 1rem;
+        color: ${props => props.theme.colors.neutral.x800};
       }
 
       &:hover {

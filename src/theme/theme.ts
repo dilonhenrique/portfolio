@@ -1,16 +1,20 @@
 import { typography } from "./defaults/typography";
-import { colors } from "./defaults/colors";
+import { darkColors, lightColors } from "./defaults/colors";
 import { breakpoints } from "./defaults/breakpoints";
 
-const theme = {
+export const lightTheme = {
   typography,
-  colors,
+  colors: lightColors,
   breakpoints,
 };
 
-export type Theme = typeof theme;
-export type ThemeTypographyVariants = keyof typeof typography.variants;
-export type ThemeColors = keyof typeof colors;
-export type ThemeBreakpoints = keyof typeof breakpoints;
+export const darkTheme = {
+  typography,
+  colors: darkColors,
+  breakpoints,
+};
 
-export default theme;
+export type Theme = typeof lightTheme;
+export type ThemeTypographyVariants = keyof typeof typography.variants;
+export type ThemeColors = keyof typeof lightColors;
+export type ThemeBreakpoints = keyof typeof breakpoints;

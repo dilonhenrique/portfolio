@@ -10,7 +10,7 @@ const anoDev = 2017;
 export default function About() {
   return (
     <StyledAbout>
-      <div className='container'>
+      <div className='container' id='about'>
         <div className='about__text'>
           <Text>I started as a designer in 2009, graduated in 2014 and as I go... Lorem ipsum dolor sit amet gravida opored ipsum dolor sit amet gravida opored ipsum dolor sit amet gravida opored.</Text>
           <div className='about__numbers'>

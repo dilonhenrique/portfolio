@@ -1,3 +1,4 @@
+import { lightColors } from "@/theme/defaults/colors";
 import { styled } from "styled-components";
 
 export const StyledBanner = styled.section`
@@ -22,7 +23,7 @@ export const StyledBanner = styled.section`
         
         &:after {
           content: '';
-          background-color: black;
+          background-color: ${props => props.theme.colors.neutral.x999};
           display: inline-block;
           width: 0.5px;
           height: 60px;

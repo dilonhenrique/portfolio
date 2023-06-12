@@ -13,7 +13,7 @@ export const StyledProjects = styled.section`
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 3rem 2rem;
     padding: 1rem 0;
 
     .project {
@@ -30,9 +30,13 @@ export const StyledProjects = styled.section`
         border: 1px solid ${props => props.theme.colors.neutral.x100};
         border-radius: 5px;
         transition: 0.3s;
+        filter: grayscale(100%);
+        opacity: 0.8;
 
         &:hover {
-          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+          filter: grayscale(0%);
+          opacity: 1;
         }
       }
 
@@ -43,7 +47,16 @@ export const StyledProjects = styled.section`
         display: flex;
         gap: 1rem;
         padding: 0.5rem;
-        color: ${props => props.theme.colors.neutral.x100};
+        color: ${props => props.theme.colors.neutral.x900};
+
+        > div {
+          background-color: ${props => props.theme.colors.neutral.x100};
+          padding: 0.3rem;
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+          opacity: 0.7;
+        }
       }
 
       &__text {

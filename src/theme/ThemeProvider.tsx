@@ -1,9 +1,12 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import {
   ThemeProvider as ThemeProviderStyled,
   useTheme as useThemeStyled
 } from 'styled-components';
-import theme, { Theme } from './theme';
+import { Theme, darkTheme, lightTheme } from './theme';
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 export function useTheme(): Theme {
   return useThemeStyled() as Theme;
@@ -14,8 +17,13 @@ interface ThemeProviderProps {
 }
 
 export default function ThemeProvider({ children }: ThemeProviderProps) {
+  const [darkMode, toggleDarkMode] = useDarkMode();
+  const tema = darkMode ? darkTheme : lightTheme;
+
+  console.log(darkMode)
+
   return (
-    <ThemeProviderStyled theme={theme}>
+    <ThemeProviderStyled theme={tema}>
       {children}
     </ThemeProviderStyled>
   )

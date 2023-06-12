@@ -3,7 +3,7 @@ const projects = [
     name: "Dilon's portfolio - website",
     categories: ['html', 'css', 'react', 'next', 'cssJs'],
     image: '/projects/dilon.jpg',
-    link: 'https://github.com/dilonhenrique/propostas-verta',
+    link: 'https://github.com/dilonhenrique/portfolio',
   },
   {
     name: 'Propostas Vertá - webapp',
