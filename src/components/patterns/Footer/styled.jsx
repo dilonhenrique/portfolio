@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const StyledFooter = styled.footer`
-  background-color: ${props => props.darkMode ? '#000000' : props.theme.colors.neutral.x999};
+  background-color: ${props => props.darkMode ? '#000000' : props.theme.colors.neutral.x100};
   display: flex;
   width: 100%;
   justify-content: center;

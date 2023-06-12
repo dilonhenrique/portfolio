@@ -3,7 +3,7 @@ import { StyledFooter } from './styled';
 import Text from '@/components/elements/Text';
 import { TbBrandInstagram, TbBrandGithub, TbBrandLinkedin } from 'react-icons/tb';
 import Link from '@/components/elements/Link';
-import { useDarkMode } from '@/hooks/useDarkMode';
+import { useDarkMode } from '@/context/darkMode';
 
 const iconProps = {
   size: 30
