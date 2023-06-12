@@ -14,8 +14,9 @@ export const StyledBanner = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 10rem 0;
-      opacity: 0.3;
+      padding-top: 10rem;
+      padding-bottom: 8rem;
+      opacity: 0.35;
       writing-mode: vertical-lr;
       
       p {

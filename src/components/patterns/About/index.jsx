@@ -12,7 +12,8 @@ export default function About() {
     <StyledAbout>
       <div className='container' id='about'>
         <div className='about__text'>
-          <Text>I started as a designer in 2009, graduated in 2014 and as I go... Lorem ipsum dolor sit amet gravida opored ipsum dolor sit amet gravida opored ipsum dolor sit amet gravida opored.</Text>
+          <Text as='h2' variant='heading2'>About<span className='dot'>.</span></Text>
+          <Text>My degree says "designer", but to be honest, I've always been a developer at heart (I learned HTML before I even discovered Photoshop). Transforming thousands of characters into real solutions has always fascinated me and so I finally decided to focus on what I love to do: coding. Yes, after working in design for over a decade, this is the year I make my career transition.</Text>
           <div className='about__numbers'>
             <div className='about__number'>
               <TbBrush size={50} />

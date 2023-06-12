@@ -5,10 +5,10 @@ export const typography = {
       fontFamily: '"Rozha One", serif',
       fontWeight: '400',
       lineHeight: {
-        xs: '1.5',
+        xs: '1em',
       },
       fontSize: {
-        xs: '42px',
+        xs: '50px',
         md: '90px',
       },
     },
@@ -84,8 +84,8 @@ export const typography = {
         xs: '1.5',
       },
       fontSize: {
-        xs: '16px',
-        md: '18px',
+        xs: '15px',
+        md: '16px',
       },
       opacity: '0.7',
     },

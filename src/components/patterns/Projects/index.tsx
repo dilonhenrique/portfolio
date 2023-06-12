@@ -15,22 +15,22 @@ export default function Projects() {
         <ul className='projects'>
           {projects.map((proj, index) => (
             <li className='project' key={index}>
+              <div className='project__text'>
+                <Text color='primary' style={{ fontWeight: 700, opacity: 1 }}>{proj.name}</Text>
+                <ArrowButton href={proj.link} target='_blank'>See this</ArrowButton>
+              </div>
               <a
                 href={proj.link}
                 target='_blank'
                 className='project__image'
                 style={{ backgroundImage: `url(${proj.image})` }}
               >
-                <div className='project__icons'>
-                  {proj.categories.map(cat => {
-                    const catAtual = habilities.find(hab => hab.slug === cat);
-                    return catAtual && <div><catAtual.Icon size={26} key={cat} title={catAtual.name} /></div>
-                  })}
-                </div>
               </a>
-              <div className='project__text'>
-                <Text style={{fontWeight: 700, opacity: 1 }}>{proj.name}</Text>
-                <ArrowButton href={proj.link} target='_blank'>See this</ArrowButton>
+              <div className='project__icons'>
+                {proj.categories.map(cat => {
+                  const catAtual = habilities.find(hab => hab.slug === cat);
+                  return catAtual && <div><catAtual.Icon size={26} key={cat} title={catAtual.name} /></div>
+                })}
               </div>
             </li>
           ))}

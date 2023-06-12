@@ -32,6 +32,7 @@ export const StyledProjects = styled.section`
         transition: 0.3s;
         filter: grayscale(100%);
         opacity: 0.8;
+        margin: .5rem 0;
 
         &:hover {
           box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -41,12 +42,12 @@ export const StyledProjects = styled.section`
       }
 
       &__icons {
-        position: absolute;
+        /* position: absolute;
         bottom: 0;
-        right: 0;
+        right: 0; */
         display: flex;
-        gap: 1rem;
-        padding: 0.5rem;
+        gap: .5rem;
+        /* padding: 0.5rem; */
         color: ${props => props.theme.colors.neutral.x900};
 
         > div {
@@ -63,6 +64,8 @@ export const StyledProjects = styled.section`
         padding-top:0.5rem;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-basis: 50%;
       }
     }
   }
@@ -75,8 +78,8 @@ export const StyledProjects = styled.section`
 
   @media (max-width: ${props => props.theme.breakpoints.sm}px){
     .project__icons {
-      justify-content: right;
-      flex-wrap: wrap-reverse;
+      /* justify-content: right; */
+      flex-wrap: wrap;
     }
   }
 `
