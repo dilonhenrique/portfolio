@@ -66,4 +66,17 @@ export const StyledProjects = styled.section`
       }
     }
   }
+
+  @media (max-width: ${props => props.theme.breakpoints.lg}px){
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}px){
+    .project__icons {
+      justify-content: right;
+      flex-wrap: wrap-reverse;
+    }
+  }
 `

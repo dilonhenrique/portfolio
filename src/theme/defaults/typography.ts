@@ -8,7 +8,7 @@ export const typography = {
         xs: '1.5',
       },
       fontSize: {
-        xs: '60px',
+        xs: '42px',
         md: '90px',
       },
     },
@@ -73,7 +73,8 @@ export const typography = {
         xs: '1.5',
       },
       fontSize: {
-        xs: '24px',
+        xs: '20px',
+        md: '24px',
       },
       opacity: '0.7',
     },
@@ -83,7 +84,8 @@ export const typography = {
         xs: '1.5',
       },
       fontSize: {
-        xs: '18px',
+        xs: '16px',
+        md: '18px',
       },
       opacity: '0.7',
     },
@@ -93,7 +95,8 @@ export const typography = {
         xs: '1.5',
       },
       fontSize: {
-        xs: '16px',
+        xs: '12px',
+        sm: '16px',
       },
       opacity: '0.7',
     },
@@ -103,7 +106,8 @@ export const typography = {
         xs: '1.5',
       },
       fontSize: {
-        xs: '12px',
+        xs: '10px',
+        sm: '12px',
       },
       opacity: '0.7',
     },
@@ -113,7 +117,8 @@ export const typography = {
         xs: '1.5',
       },
       fontSize: {
-        xs: '8px',
+        xs: '7px',
+        sm: '8px',
       },
       opacity: '0.7',
     },

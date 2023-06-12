@@ -42,4 +42,20 @@ export const StyledAbout = styled.section`
       vertical-align: bottom;
     }
   }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}px){
+    .container{
+      grid-template-columns: 1fr;
+  
+      .about__numbers {
+        gap: unset;
+        justify-content: space-evenly;
+      }
+
+      .about__number {
+        width: fit-content;
+        padding: 2rem 1rem;
+      }
+    }  
+  }
 `

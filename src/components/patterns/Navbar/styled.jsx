@@ -19,6 +19,10 @@ export const StyledNavbar = styled.header`
       display: flex;
       flex-direction: row;
       gap: 1rem;
+
+      @media (max-width: ${props => props.theme.breakpoints.sm}px){
+        display: none;
+      }
     }
   }
 `

@@ -69,4 +69,16 @@ export const StyledHabilities = styled.section`
       }
     }
   }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}px){
+    .habilities {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 320px){
+    .habilities {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 `

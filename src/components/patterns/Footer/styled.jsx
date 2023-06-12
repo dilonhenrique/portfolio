@@ -13,11 +13,22 @@ export const StyledFooter = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap;
 
     .socials {
       display: flex;
       flex-direction: row;
       gap: 0.5rem;
+    }
+  }
+
+  @media (max-width: ${props => props.theme.breakpoints.sm}px){
+    .container {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
     }
   }
 `
