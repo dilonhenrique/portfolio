@@ -29,7 +29,7 @@ export default function Projects() {
               <div className='project__icons'>
                 {proj.categories.map(cat => {
                   const catAtual = habilities.find(hab => hab.slug === cat);
-                  return catAtual && <div><catAtual.Icon size={26} key={cat} title={catAtual.name} /></div>
+                  return catAtual && <div><catAtual.Icon size={26} key={`${proj.name}-${cat}`} title={catAtual.name} /></div>
                 })}
               </div>
             </li>
