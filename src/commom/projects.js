@@ -1,9 +1,9 @@
 const projects = [
   {
-    name: "Dilon's portfolio - website",
-    categories: ['html', 'css', 'react', 'next', 'cssJs'],
-    image: '/projects/dilon.jpg',
-    link: 'https://github.com/dilonhenrique/portfolio',
+    name: "Pasmania - e-commerce",
+    categories: ['html', 'css', 'js', 'react', 'next', 'cssJs', 'sass'],
+    image: '/projects/pasmania.jpg',
+    link: 'https://pasmania.vercel.app',
   },
   {
     name: 'Propostas Vertá - webapp',
